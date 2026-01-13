@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="light-mode">
@@ -28,8 +27,11 @@
     <a href="#contact-section" class="nav-link">Contact</a>
   </div>
 
-  <!-- SEARCH BAR -->
-  <input type="text" id="searchBar" placeholder="Search..." />
+  <!-- MODERN SEARCH BAR -->
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search projects or sections..." />
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
 
   <div class="mode-toggle" id="modeToggle">
     <i class="fa-solid fa-moon"></i>
@@ -37,18 +39,12 @@
 </nav>
 
 <div class="container">
-
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <img src="profile.jpg" class="profile-pic" alt="Profile">
 
     <h1 id="name"></h1>
     <p class="role" id="role"></p>
-
-    <!-- RESUME BUTTON -->
-    <a href="resume.pdf" download class="resume-btn">
-      <i class="fa-solid fa-download"></i> Download Resume
-    </a>
 
     <div class="info">
       <h3>Skills</h3>
@@ -64,7 +60,6 @@
 
   <!-- CONTENT -->
   <main class="content">
-
     <section id="home" class="page-section show">
       <h2>Welcome</h2>
       <p>Hello! I’m <strong>Melvin Reyes</strong>, a BSIT student & Web Developer.</p>
@@ -94,7 +89,6 @@
       <h2>Contact Me</h2>
       <div class="social-links" id="contactInfo"></div>
     </section>
-
   </main>
 </div>
 
