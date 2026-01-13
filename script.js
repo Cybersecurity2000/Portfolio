@@ -11,9 +11,9 @@ const portfolio = {
   ],
   contact: `
     <a href="mailto:20201041@nbsc.edu.ph"><i class="fa-solid fa-envelope"></i></a>
-    <a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a>
-    <a href="https://instagram.com/yourusername" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://youtube.com/@yourchannel" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    <a href="https://github.com/Cybersecurity2000" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://instagram.com/_melvinreyes_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://youtube.com/@melvinreyes6100" target="_blank"><i class="fa-brands fa-youtube"></i></a>
   `
 };
 
