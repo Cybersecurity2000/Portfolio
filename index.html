@@ -3,71 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <title>Melvin Reyes | Portfolio</title>
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="light-mode">
 
-  <nav class="navbar">
-  <div class="nav-left">
-    <span class="logo">Melvin.dev</span>
+<nav class="navbar">
+  <span class="logo">Melvin.dev</span>
+
+  <div class="menu-toggle" id="menuToggle">
+    <i class="fa-solid fa-bars"></i>
   </div>
 
-  <div class="nav-center">
+  <div class="nav-center" id="navMenu">
     <a href="#home" class="nav-link active">Home</a>
-    <a href="#about-section" class="nav-link">About Us</a>
+    <a href="#about-section" class="nav-link">About</a>
     <a href="#services-section" class="nav-link">Services</a>
     <a href="#portfolio-section" class="nav-link">Portfolio</a>
     <a href="#contact-section" class="nav-link">Contact</a>
   </div>
 
-  <div class="nav-right">
-    <input type="text" id="searchBar" placeholder="Search..." />
+  <!-- SEARCH BAR -->
+  <input type="text" id="searchBar" placeholder="Search..." />
+
+  <div class="mode-toggle" id="modeToggle">
+    <i class="fa-solid fa-moon"></i>
   </div>
 </nav>
 
-  <div class="container">
-    <!-- LEFT PANEL -->
-    <aside class="sidebar">
-      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+<div class="container">
 
-      <h1 id="name"></h1>
-      <p class="role" id="role"></p>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <img src="profile.jpg" class="profile-pic" alt="Profile">
 
-      <div class="info">
-        <h3>Contact</h3>
-        <p id="contactInfo"></p>
-      </div>
+    <h1 id="name"></h1>
+    <p class="role" id="role"></p>
 
-      <div class="info">
-        <h3>Skills</h3>
-        <ul class="skills">
-          <li>HTML & CSS</li>
-          <li>JavaScript</li>
-          <li>Ionic React</li>
-          <li>Supabase</li>
-          <li>Git & GitHub</li>
-        </ul>
-      </div>
-    </aside>
+    <!-- RESUME BUTTON -->
+    <a href="resume.pdf" download class="resume-btn">
+      <i class="fa-solid fa-download"></i> Download Resume
+    </a>
 
-    <!-- RIGHT PANEL -->
-    <main class="content">
-      <section>
-        <h2>About Me</h2>
-        <p id="about"></p>
-      </section>
+    <div class="info">
+      <h3>Skills</h3>
+      <ul class="skills">
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Ionic React</li>
+        <li>Supabase</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </aside>
 
-      <section>
-        <h2>Projects</h2>
-        <div class="projects" id="projectList"></div>
-      </section>
-    </main>
-  </div>
+  <!-- CONTENT -->
+  <main class="content">
 
-  <footer>
-    © 2026 Melvin A. Reyes
-  </footer>
+    <section id="home" class="page-section show">
+      <h2>Welcome</h2>
+      <p>Hello! I’m <strong>Melvin Reyes</strong>, a BSIT student & Web Developer.</p>
+    </section>
 
-  <script src="script.js"></script>
+    <section id="about-section" class="page-section">
+      <h2>About Me</h2>
+      <p id="about"></p>
+    </section>
+
+    <section id="services-section" class="page-section">
+      <h2>Services</h2>
+      <ul>
+        <li>Web Development</li>
+        <li>System Development</li>
+        <li>UI / UX Design</li>
+        <li>Database Integration</li>
+      </ul>
+    </section>
+
+    <section id="portfolio-section" class="page-section">
+      <h2>Projects</h2>
+      <div class="projects" id="projectList"></div>
+    </section>
+
+    <section id="contact-section" class="page-section">
+      <h2>Contact Me</h2>
+      <div class="social-links" id="contactInfo"></div>
+    </section>
+
+  </main>
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span id="closeModal">&times;</span>
+  <img id="modal-img" src="" alt="Project Image">
+</div>
+
+<footer>© 2026 Melvin A. Reyes</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
