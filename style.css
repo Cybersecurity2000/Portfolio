@@ -151,3 +151,57 @@ footer {
   font-size: 14px;
   color: #666;
 }
+
+
+
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+.logo {
+  color: #38bdf8;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-center {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-link {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link.active {
+  color: white;
+  background: #38bdf8;
+  box-shadow: 0 0 12px #38bdf8;
+}
+
+/* SEARCH BAR */
+#searchBar {
+  padding: 7px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 13px;
+}
